@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const app = express();
 const port = 4000;
 app.use(express.json());
-const users = require("./routes/users/users")
-const posts = require("./routes/posts/posts")
+const users = require("./routes/users")
+const posts = require("./routes/posts")
 
 const url = "mongodb://127.0.0.1/facebookDb";
 mongoose.connect(url,{useNewUrlParser:true});
